@@ -10,7 +10,7 @@ import com.example.demo.service.UserService;
 @RestController
 public class UserController {
 	@Autowired
-	UserService userService;
+	private UserService userService;
 	
 	@RequestMapping("/userId")
 		public String index() {

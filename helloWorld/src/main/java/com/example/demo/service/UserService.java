@@ -9,11 +9,11 @@ import com.example.demo.userDao.UserDao;
 @Service
 public class UserService {
 	@Autowired
-	UserDao userDao;
+	private UserDao userDao;
 	
 	  public String getUserId(){
 		  System.out.println("進入了UserService的getUserId方法");
-//		  String userId="5";
+//		  String userId="6";
 //		  return userId;
 		  userDao.addUser("1");
 		  return "OK";
